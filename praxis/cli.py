@@ -18,15 +18,21 @@ load_dotenv()
 @click.command()
 @click.option("--debug", is_flag=True, help="Enable debug output.")
 @click.option("--fallback", is_flag=True, help="Force GPT-4 instead of local model.")
-def main(debug: bool, fallback: bool):
+@click.option("--agent", is_flag=True, help="Run in autonomous agent mode.")
+def main(debug: bool, fallback: bool, agent: bool):
     click.echo("PRAXIS-1 CLI assistant • type 'exit' to quit.")
+
+    if agent:
+        from praxis.agents.agent_core import run_agent
+        goal = input("Enter your goal for the agent: ").strip()
+        run_agent(goal, debug=debug)
+        return
 
     while True:
         user_in = input(">>> ").strip()
         if user_in.lower() in {"exit", "quit"}:
             break
 
-        # 1️⃣ Choose model
         try:
             if fallback:
                 cmd = gpt4_gen(user_in)
@@ -45,12 +51,12 @@ def main(debug: bool, fallback: bool):
         if debug:
             click.echo(f"[LLM] Proposed: {cmd}")
 
-        # 2️⃣ Execute command
         result = run_command(cmd)
         if result is None:
             click.secho("Blocked for safety. (Not in whitelist.)", fg="red")
         else:
             click.secho(result, fg="green")
+
 
 
 if __name__ == "__main__":

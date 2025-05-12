@@ -1,0 +1,17 @@
+Current working directory:"
+
+pwd
+
+ "\nYour username:"
+
+whoami
+
+ "\nList of files in the current directory:"
+
+ls
+
+ "\nDate and time:"
+
+date
+
+ "\nNote: Today is [the date from above]
