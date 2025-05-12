@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "praxis-core"
+version = "0.1.0"
+description = "Local autonomous assistant for PRAXIS-1"
+authors = ["Cliff May <you@example.com>"]
+packages = [{ include = "praxis" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1"
+requests = "^2.32"
+python-dotenv = "^1.0"
+pydantic = "^2.7"
+ollama = "*"
+openai = ">=1.14"
+pyautogui = "^0.9"
+
+[tool.poetry.scripts]
+praxis-cli = "praxis.cli:main"
