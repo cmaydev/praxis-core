@@ -1,0 +1,72 @@
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------
+[AGENT] INPUT: list all the files in this dir
+[AGENT] CMD:   ls
+[AGENT] OUT:   LICENSE
+poetry.lock
+praxis
+praxis-core-skeleton.zip
+pyproject.toml
+README.md
+tests
+venv
+
+----------------------------------------

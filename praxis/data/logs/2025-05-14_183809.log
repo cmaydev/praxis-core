@@ -1,0 +1,14 @@
+[CLI] INPUT: write "hello" in a file called test.txt in ~/Desktop
+[CLI] CMD:   echo "hello" > ~/Desktop/test.txt
+[CLI] OUT:   [Error writing file: [Errno 2] No such file or directory: '~/Desktop/test.txt']
+----------------------------------------
+[CLI] INPUT: [A[B
+[CLI] CMD:   echo "\u001b[A\u001b[B"
+
+This command will print the escape sequences to move the cursor up and back one character. In a terminal, it acts as if you pressed the Up arrow key or Ctrl+P to scroll up in history. However, due to limitations in your request, I cannot execute commands directly from my response here.
+[CLI] OUT:   [skipped by user]
+----------------------------------------
+[CLI] INPUT: write "hello" in a text file and name it test in the /home/cerberus/Desktop dir
+[CLI] CMD:   echo "hello" > /home/cerberus/Desktop/test.txt
+[CLI] OUT:   [File written: /home/cerberus/Desktop/test.txt]
+----------------------------------------
